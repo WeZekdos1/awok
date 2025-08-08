@@ -10,5 +10,6 @@ and open your emacs (GUI)
 
 ## New Keybind
 
-**C-c p** = go to previous window and kill current buffer\n
+**C-c p** = go to previous window and kill current buffer
+
 **C-c o** = shortcut opening "grep -rn" for searching word in specific file
