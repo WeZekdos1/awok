@@ -8,15 +8,6 @@
 (setq grep-command "grep -rn ")
 (global-set-key (kbd "C-c o") 'grep) ; grep for searching definition
 
-(defun ucok/stpadcb()
-  "switch to previous window then kill the current buffer"
-  (interactive)
-  (let ((buf (current-buffer)))
-    (switch-to-buffer (other-buffer))
-    (kill-buffer buf)))
-
-(global-set-key (kbd "C-c p") #'ucok/stpadcb) ; switch to previous window then kill the current buffer
-
 ;; customizing some utility
 (setq inhibit-startup-screen t)
 (tool-bar-mode -1)
@@ -30,3 +21,5 @@
 :init
 (ivy-mode 1)
 
+(use-package magit
+:ensure t)
