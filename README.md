@@ -1,4 +1,9 @@
-## Instalation
+### Instalation
+
+install this package
+```
+sudo apt install clangd python3-pylsp
+```
 
 clone this code into your user
 ```
@@ -6,7 +11,7 @@ git clone https://github.com/WeZekdos1/awok.git
 ```
 you can remove README.md after that
 
-## New Keybind
+### New Keybind
 
 - **C-c o** = shortcut opening "grep -rn"
 - **s-l** = lsp-keymap-prefix
