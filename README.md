@@ -4,10 +4,10 @@ clone this code into your user
 ```
 git clone https://github.com/WeZekdos1/awok.git
 ```
-and open your emacs (GUI)
-
-\*note: reselect with **M-x customize-themes** if the theme doesn't loaded
+you can remove README.md after that
 
 ## New Keybind
 
-**C-c o** = shortcut opening "grep -rn" for searching word in specific file
+- **C-c o** = shortcut opening "grep -rn"
+- **s-l** = lsp-keymap-prefix
+- **s-c l** = lsp

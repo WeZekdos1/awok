@@ -1,6 +1,4 @@
-;; external configuration
-(load-file "~/.awok-emacs/.emacs-packages.el")
-
+;; custom file for custom-set-variable
 (setq custom-file "~/.awok-emacs/.emacs-customvar.el")
 (load custom-file) ; changing default custom-set-variable to another file
 
@@ -16,10 +14,5 @@
 (global-display-line-numbers-mode t)
 (setq dired-kill-when-opening-new-dired-buffer t)
 
-;; list of used packages
-(use-package ivy)
-:init
-(ivy-mode 1)
-
-(use-package magit
-:ensure t)
+;; package configuration
+(load-file "~/.awok-emacs/.emacs-packages.el")
