@@ -2,7 +2,7 @@
 
 install this package
 ```
-sudo apt install clangd-19 python3-pylsp
+sudo apt install clangd-19 python3 python3-pylsp
 ```
 
 clone this code into your home
@@ -18,3 +18,12 @@ you can remove README.md after that
 - **C-c o** = shortcut opening "grep -rn"
 - **s-l** = lsp-keymap-prefix
 - **s-c l** = lsp
+- **C-c m** = mc/edit-lines
+- **C-c C-m** = mc/mark-all-like-this
+- **C-\>** = mc/mark-next-like-this
+- **C-<** = mc-mark-previous-like-this
+
+#### Changelog
+- adding company-mode
+- adding multiple cursors
+- adding c highlight for pokemon decomp called poke-mode

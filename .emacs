@@ -2,6 +2,9 @@
 (setq custom-file "~/.awok-emacs/.emacs-customvar.el")
 (load custom-file) ; changing default custom-set-variable to another file
 
+;; set iosevka font
+;; (add-to-list 'default-frame-alist '(font . "iosevka Curly Slab-12"))
+
 ;; key binding
 (setq grep-command "grep -rn ")
 (global-set-key (kbd "C-c o") 'grep) ; grep for searching definition
@@ -16,3 +19,7 @@
 
 ;; package configuration
 (load-file "~/.awok-emacs/.emacs-packages.el")
+
+;; agbcc-mode for pokemon gen 3 decomp
+(add-to-list 'load-path "~/.awok-emacs/")
+(require 'poke-mode)

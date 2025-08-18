@@ -44,3 +44,14 @@
 
 (use-package lsp-ivy
   :after (lsp-mode ivy))
+
+;; completation anything
+(use-package company
+  :init (add-hook 'after-init-hook 'global-company-mode))
+
+;; for multiple cursors purpose
+(use-package multiple-cursors
+  :bind (("C-c m" . mc/edit-lines)
+	 ("C->" . mc/mark-next-like-this)
+	 ("C-<" . mc/mark-previous-like-this)
+	 ("C-c C-m" . mc/mark-all-like-this)))
