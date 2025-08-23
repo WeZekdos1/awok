@@ -1,9 +1,9 @@
 ;; setup repository
 (require 'package)
 (setq package-archives
-'(("gnu" . "https://elpa.gnu.org/packages/")
-  ("nongnu" . "https://elpa.nongnu.org/nongnu/")
-  ("melpa-stable" . "https://stable.melpa.org/packages/")))
+      '(("gnu" . "https://elpa.gnu.org/packages/")
+        ("nongnu" . "https://elpa.nongnu.org/nongnu/")
+        ("melpa-stable" . "https://stable.melpa.org/packages/")))
 
 (package-initialize)
 (unless package-archive-contents
@@ -21,9 +21,9 @@
 
 ;; ivy setup
 (use-package ivy
-:init
-(ivy-mode 1)
-(setq ivy-count-format "(%d/%d) "))
+  :init
+  (ivy-mode 1)
+  (setq ivy-count-format "(%d/%d) "))
 
 ;; magit setup
 (use-package magit)
@@ -34,9 +34,10 @@
   :hook ((c-mode c++-mode python-mode) . lsp-deferred)
   :commands lsp
   :init
-  (setq lsp-prefer-capf t
-	lsp-enable-snippet t
-	lsp-idle-delay 0.5)
+  (setq lsp-idle-delay 1.1
+        lsp-enable-indentation nil
+        lsp-enable-on-type-formatting nil
+        c-basic-offset 4)
   :config
   (setq lsp-clients-clangd-executable "/usr/bin/clangd-19")
   (setq lsp-pylsp-server-command '("/usr/bin/pylsp")))
@@ -52,6 +53,6 @@
 ;; for multiple cursors purpose
 (use-package multiple-cursors
   :bind (("C-c m" . mc/edit-lines)
-	 ("C->" . mc/mark-next-like-this)
-	 ("C-<" . mc/mark-previous-like-this)
-	 ("C-c C-m" . mc/mark-all-like-this)))
+         ("C->" . mc/mark-next-like-this)
+         ("C-<" . mc/mark-previous-like-this)
+	     ("C-c C-m" . mc/mark-all-like-this)))

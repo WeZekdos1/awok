@@ -5,6 +5,11 @@
 ;; set iosevka font
 ;; (add-to-list 'default-frame-alist '(font . "iosevka Curly Slab-12"))
 
+;; set indentation
+(setq-default indent-tabs-mode nil) ; indentation using space
+(setq-default tab-width 4) ; ukuran 4 spasi
+(setq-default standard-indent 4) ; default offset
+
 ;; key binding
 (setq grep-command "grep -rn ")
 (global-set-key (kbd "C-c o") 'grep) ; grep for searching definition
@@ -19,7 +24,3 @@
 
 ;; package configuration
 (load-file "~/.awok-emacs/.emacs-packages.el")
-
-;; agbcc-mode for pokemon gen 3 decomp
-(add-to-list 'load-path "~/.awok-emacs/")
-(require 'poke-mode)
