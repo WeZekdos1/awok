@@ -22,8 +22,3 @@ you can remove README.md after that
 - **C-c C-m** = mc/mark-all-like-this
 - **C-\>** = mc/mark-next-like-this
 - **C-<** = mc-mark-previous-like-this
-
-#### Changelog
-- adding company-mode
-- adding multiple cursors
-- adding c highlight for pokemon decomp called poke-mode
